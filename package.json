@@ -1,7 +1,17 @@
 {
     "type": "module",
+    "scripts": {
+        "start": "pm2 start ./pm2.json",
+        "stop": "pm2 stop ./pm2.json",
+        "delete": "pm2 delete ./pm2.json",
+        "status": "pm2 status",
+        "log": "pm2 log",
+        "deploy": "scp * game:/home/bugra/cronjob-game"
+    },
     "dependencies": {
-        "resend": "^4.4.1"
+        "resend": "^4.4.1",
+        "node-cron": "^3.0.3",
+        "pm2": "^6.0.5"
     },
     "packageManager": "pnpm@8.15.4+sha1.c85a4305534f76d461407b59277b954bac97b5c4"
 }

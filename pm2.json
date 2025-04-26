@@ -1,0 +1,9 @@
+{
+    "apps": [{
+        "name"        : "cronjob",
+        "script"      : "node",
+        "watch"       : false,
+        "merge_logs"  : true,
+        "args"        : "./cronjob.js"
+    }]
+}
